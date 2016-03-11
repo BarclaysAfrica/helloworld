@@ -3,10 +3,7 @@
 The project is the first of many in our new opensource drive.
 
 == Installation and Getting Started
-The project is a standard HelloWorld example using spring-boot. Please look at {docs}/htmlsingle/[reference documentation] and
-{docs}/htmlsingle/#getting-started-installing-spring-boot[installation instructions]
-as well as a comprehensive {docs}/htmlsingle/#getting-started-first-application[``getting
-started``] guide.
+The project is a standard HelloWorld example using spring-boot.
 
 Here is a quick view of our complete code:
 
