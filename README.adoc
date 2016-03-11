@@ -1,0 +1,62 @@
+= HelloWorld
+
+The project is the first of many in our new opensource drive.
+
+== Installation and Getting Started
+The project is a standard HelloWorld example using spring-boot. Please look at {docs}/htmlsingle/[reference documentation] and
+{docs}/htmlsingle/#getting-started-installing-spring-boot[installation instructions]
+as well as a comprehensive {docs}/htmlsingle/#getting-started-first-application[``getting
+started``] guide.
+
+Here is a quick view of our complete code:
+
+[source,java,indent=0]
+----
+    package ba.os;
+
+    import org.slf4j.Logger;
+    import org.slf4j.LoggerFactory;
+    import org.springframework.boot.CommandLineRunner;
+    import org.springframework.boot.SpringApplication;
+    import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+    @SpringBootApplication
+    public class HelloworldApplication implements CommandLineRunner{
+        private static final Logger log = LoggerFactory.getLogger(HelloworldApplication.class);
+
+        @Override
+        public void run(String... strings) throws Exception {
+            log.info("Barclays Africa: Hello to the open source world");
+        }
+
+        public static void main(String[] args) {
+            SpringApplication.run(HelloworldApplication.class, args);
+        }
+    }
+----
+
+
+
+== Getting help & reporting issues
+Our project uses GitHub's integrated issue tracking system to record bugs and feature
+requests. If you want to raise an issue, please follow the recommendations below:
+
+* Report bugs with our app at https://github.com/BarclaysAfrica/helloworld/issues[github.com/BarclaysAfrica/helloworld/issues].
+
+
+== Building from Source
+Ensure you have http://www.oracle.com/technetwork/java/javase/downloads/index.html[Java8 JDK] installed and added to environment path as well as https://maven.apache.org/download.cgi[Maven v3.0.5 or above].
+Once added, you should be able to run both javac and mvn from terminal.
+
+To build this project, clone it and run using https://maven.apache.org/download.cgi[Maven3]:
+
+[indent=0]
+----
+    $ git clone https://github.com/BarclaysAfrica/helloworld
+    $ cd helloworld
+	$ mvn clean spring-boot:run
+----
+
+== License
+This project is released under the
+http://www.apache.org/licenses/LICENSE-2.0.html[Apache 2.0 license].
