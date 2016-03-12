@@ -12,7 +12,7 @@ public class HelloworldApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... strings) throws Exception {
-		log.info("Barclays Africa: Hello to the open source world");
+		log.info("Barclays Africa: Hello to the open source world. We have cookies!");
 	}
 
 	public static void main(String[] args) {
