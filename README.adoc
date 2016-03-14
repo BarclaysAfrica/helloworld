@@ -1,6 +1,6 @@
 = HelloWorld
 
-The project is the first of many in our new opensource drive.
+The project is the first of many in our new open-source drive.
 
 == Installation and Getting Started
 The project is a standard HelloWorld example using spring-boot.
@@ -9,7 +9,7 @@ Here is a quick view of our complete code:
 
 [source,java,indent=0]
 ----
-    package ba.os;
+    package ba.oss;
 
     import org.slf4j.Logger;
     import org.slf4j.LoggerFactory;
@@ -19,6 +19,7 @@ Here is a quick view of our complete code:
 
     @SpringBootApplication
     public class HelloworldApplication implements CommandLineRunner{
+
         private static final Logger log = LoggerFactory.getLogger(HelloworldApplication.class);
 
         @Override
@@ -32,26 +33,24 @@ Here is a quick view of our complete code:
     }
 ----
 
-
-
 == Getting help & reporting issues
 Our project uses GitHub's integrated issue tracking system to record bugs and feature
 requests. If you want to raise an issue, please follow the recommendations below:
 
 * Report bugs with our app at https://github.com/BarclaysAfrica/helloworld/issues[github.com/BarclaysAfrica/helloworld/issues].
 
+== Running the project
+Ensure you have http://www.oracle.com/technetwork/java/javase/downloads/index.html[Java8 JDK] installed and added to environment path.
+You do not require Maven to be installed if you use the `mvnw` scripts to run the project as a local instance of Maven will be downloaded automatically.
+However, if you intend building the project you will require https://maven.apache.org/download.cgi[Maven v3.0.5 or above].
 
-== Building from Source
-Ensure you have http://www.oracle.com/technetwork/java/javase/downloads/index.html[Java8 JDK] installed and added to environment path as well as https://maven.apache.org/download.cgi[Maven v3.0.5 or above].
-Once added, you should be able to run both javac and mvn from terminal.
-
-To build this project, clone it and run using https://maven.apache.org/download.cgi[Maven3]:
+To run the project:
 
 [indent=0]
 ----
     $ git clone https://github.com/BarclaysAfrica/helloworld
     $ cd helloworld
-	$ mvn clean spring-boot:run
+	$ ./mvnw # Windows users use mvnw.cmd
 ----
 
 == License
